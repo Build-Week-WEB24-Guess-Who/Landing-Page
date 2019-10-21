@@ -1,0 +1,32 @@
+.container {
+    max-height: 100vh;
+
+    .content {
+        //background: aliceblue;
+        background: rgb(240,248,255);
+        background: radial-gradient(circle, rgba(240,248,255,1) 41%, rgba(227,236,244,1) 53%, rgba(207,226,228,0.6594685758097788) 98%);
+        height: 95vh;
+        display: flex;
+        .center();
+
+        .main-cta {
+            width: 25%;
+            text-align: center;
+            font-weight: 700;
+
+            p {
+                font-size: 2.3rem;
+                color: rgba(0, 0, 0, 0.4);
+            }
+        
+            button {
+                margin: auto;
+                .custom-button();
+
+                &:hover {
+                    background: paleturquoise;
+                }
+            }
+        }
+    }
+}
