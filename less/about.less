@@ -1,0 +1,36 @@
+.content {
+    display: flex;
+
+    .team {
+        display: flex;
+        flex-wrap: wrap;
+        .center();
+        width: 95%;
+
+        h2 {
+            margin-top: 3%;
+            font-size: 1.4rem;
+        }
+
+        div {
+            .team-divs();
+        }
+
+        img {
+            .img-att();
+        }
+
+        @media @phone {
+            flex-direction: column;
+
+            img {
+                display: none;
+            }
+
+            div {
+                width: 216px;
+                height: 36px;
+            }
+        }
+    }//team end
+}//content end

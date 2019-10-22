@@ -5,6 +5,11 @@
   font-display: swap;
   src: local('Montserrat Regular'), local('Montserrat-Regular'), url(https://fonts.gstatic.com/s/montserrat/v14/JTUSjIg1_i6t8kCHKm459Wlhzg.ttf) format('truetype');
 }
+.team-divs {
+  width: 160px;
+  height: 200px;
+  text-align: center;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -235,7 +240,7 @@ header nav .menu a:hover {
   .container .content {
     flex-direction: column-reverse;
   }
-  .container .content img {
+  .container .content .home-img {
     display: none;
   }
 }
@@ -287,6 +292,42 @@ header nav .menu a:hover {
     width: 60%;
   }
 }
+.content {
+  display: flex;
+}
+.content .team {
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 95%;
+}
+.content .team h2 {
+  margin-top: 3%;
+  font-size: 1.4rem;
+}
+.content .team div {
+  width: 160px;
+  height: 200px;
+  text-align: center;
+}
+.content .team img {
+  width: 150px;
+  height: 150px;
+  border-radius: 10px;
+}
+@media (max-width: 500px) {
+  .content .team {
+    flex-direction: column;
+  }
+  .content .team img {
+    display: none;
+  }
+  .content .team div {
+    width: 216px;
+    height: 36px;
+  }
+}
 footer {
   display: flex;
   align-items: center;
@@ -298,4 +339,7 @@ footer {
 }
 footer .footer-info {
   margin-left: 5%;
+}
+footer .footer-info a {
+  text-decoration: none;
 }
