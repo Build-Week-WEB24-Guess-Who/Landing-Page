@@ -8,6 +8,10 @@ header {
         align-items: center;
         position: fixed;
 
+        @media @phone {
+            flex-wrap: wrap;
+        }
+
         .logo {
             justify-content: flex-start;
             margin-left: 2%;
@@ -18,10 +22,13 @@ header {
             margin-right: 5%;
             font-family: 'Montserrat', sans-serif;
             font-size: 3rem;
+            width: 40%;
+            text-align: end;
 
             a {
                 color: lightsteelblue;
                 text-decoration: none;
+                padding: 0 1%;
 
                 &:hover {
                     color: rgb(159, 209, 254);
