@@ -185,7 +185,7 @@ header nav {
 }
 @media (max-width: 500px) {
   header nav {
-    flex-wrap: wrap;
+    flex-direction: column;
   }
 }
 header nav .logo {
@@ -199,6 +199,18 @@ header nav .menu {
   font-size: 3rem;
   width: 40%;
   text-align: end;
+}
+@media (max-width: 500px) {
+  header nav .menu {
+    width: 100%;
+    text-align: center;
+  }
+}
+@media (min-width: 501px) and (max-width: 991px) {
+  header nav .menu {
+    font-size: 2rem;
+    width: 65%;
+  }
 }
 header nav .menu a {
   color: lightsteelblue;
@@ -219,10 +231,34 @@ header nav .menu a:hover {
   justify-content: center;
   align-items: center;
 }
+@media (min-width: 501px) and (max-width: 991px) {
+  .container .content {
+    flex-direction: column-reverse;
+  }
+  .container .content img {
+    display: none;
+  }
+}
+@media (max-width: 500px) {
+  .container .content img {
+    display: none;
+  }
+}
 .container .content .main-cta {
   width: 25%;
   text-align: center;
   font-weight: 700;
+  padding-right: 20px;
+}
+@media (min-width: 501px) and (max-width: 991px) {
+  .container .content .main-cta {
+    width: 57%;
+  }
+}
+@media (max-width: 500px) {
+  .container .content .main-cta {
+    width: 57%;
+  }
 }
 .container .content .main-cta p {
   font-size: 2.3rem;
@@ -234,17 +270,22 @@ header nav .menu a:hover {
 .container .content .main-cta button {
   margin: auto;
   background-color: lightsteelblue;
-  width: 40%;
-  height: 45px;
+  width: 60%;
+  height: 50px;
   border-radius: 10px;
-  font-size: 2.5rem;
   color: whitesmoke;
   display: flex;
   justify-content: center;
   align-items: center;
+  font-size: 2rem;
 }
 .container .content .main-cta button:hover {
-  background: paleturquoise;
+  background: #9fd1fe;
+}
+@media (max-width: 1331px) {
+  .container .content .main-cta button {
+    width: 60%;
+  }
 }
 footer {
   display: flex;

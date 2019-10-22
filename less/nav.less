@@ -9,7 +9,7 @@ header {
         position: fixed;
 
         @media @phone {
-            flex-wrap: wrap;
+            flex-direction: column;
         }
 
         .logo {
@@ -24,6 +24,16 @@ header {
             font-size: 3rem;
             width: 40%;
             text-align: end;
+
+            @media @phone {
+                width: 100%;
+                text-align: center;
+            }
+
+            @media @tablet {
+                font-size: 2rem;
+                width: 65%;
+            }
 
             a {
                 color: lightsteelblue;
