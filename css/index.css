@@ -343,3 +343,39 @@ footer .footer-info {
 footer .footer-info a {
   text-decoration: none;
 }
+.content .login .box {
+  text-align: center;
+}
+.content .login .box a {
+  margin: 0 3px;
+}
+.content .login .box h2 {
+  padding-bottom: 10px;
+}
+.content .login .box div {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+.content .login .box div input {
+  border-radius: 5px;
+  padding: 3px;
+}
+.content .user-signup .box {
+  text-align: center;
+}
+.content .user-signup .box a {
+  margin: 0 3px;
+}
+.content .user-signup .box h2 {
+  padding-bottom: 10px;
+}
+.content .user-signup .box div {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+.content .user-signup .box div input {
+  border-radius: 5px;
+  padding: 3px;
+}
