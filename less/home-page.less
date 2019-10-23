@@ -9,24 +9,56 @@
         display: flex;
         .center();
 
+        @media @tablet {
+            flex-direction: column-reverse;
+
+            .home-img {
+                display: none;
+            }
+        }
+
+        @media @phone {
+            img {
+                display: none;
+            }
+        }
+
         .main-cta {
             width: 25%;
             text-align: center;
             font-weight: 700;
+            padding-right: 20px;
+
+            @media @tablet {
+                width: 57%;
+            }
+
+            @media @phone {
+                width: 57%;
+            }
 
             p {
                 font-size: 2.3rem;
                 color: rgba(0, 0, 0, 0.4);
             }
+
+            a {
+                text-decoration: none;
+            }
         
             button {
                 margin: auto;
                 .custom-button();
+                font-size: 2rem;
 
                 &:hover {
-                    background: paleturquoise;
+                    background: rgb(159, 209, 254);;
+                }
+
+                @media (max-width: 1331px) {
+                    width: 60%;
                 }
             }
-        }
-    }
-}
+        }//main-cta end
+    }//content end
+}//container end
